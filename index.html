@@ -38,6 +38,40 @@
 
 <body>
     <!-- ******HEADER****** --> 
+        <script type="text/javascript">
+	var myData = new Array([10, 20], [15, 10], [20, 30], [25, 10], [30, 5]);
+	var myChart = new JSChart('chartcontainer', 'line');
+	myChart.setDataArray(myData);
+	myChart.draw();
+</script>
+<div id="chartcontainer">This is just a replacement in case Javascript is not available or used for SEO purposes</div>
+    <div id="chartcontainer">This is just a replacement in case Javascript is not available or used for SEO purposes</div>
+    <script type="text/javascript">
+	var myData = new Array(['unit', 20], ['unit two', 10], ['unit three', 30], ['other unit', 10], ['last unit', 30]);
+	var myChart = new JSChart('chartcontainer', 'bar');
+	myChart.setDataArray(myData);
+	myChart.draw();
+</script>
+<script type="text/javascript">
+	var myChart = new JSChart('chartcontainer', 'bar');
+	myChart.setDataXML('data.xml');
+	myChart.draw();
+</script>
+<script type="text/javascript">
+	var myChart = new JSChart('chartcontainer', 'pie');
+	myChart.setDataJSON('data.json');
+	myChart.draw();
+</script>
+<?xml version="1.0"?>
+<JSChart>
+	<dataset type="line">
+		<data unit="10" value="20"/>
+		<data unit="15" value="10"/>
+		<data unit="20" value="30"/>
+		<data unit="25" value="10"/>
+		<data unit="30" value="5"/>
+	</dataset>
+</JSChart>
     <header class="header">
         <div class="container">                       
             <img class="profile-image img-responsive pull-left" src="img/IMG_1610.JPG " alt="James Lee" width="300" height="200" />
